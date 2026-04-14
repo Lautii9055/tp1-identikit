@@ -92,6 +92,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12px;
+    width: 100%;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -112,8 +114,7 @@ footer {
 
 nav ul li {
     background-color: transparent;
-    width: 120px;
-    padding: 8px 10px 10px;
+    padding: 20px;
     box-sizing: border-box;
     border-bottom: 2px solid transparent;
 }
@@ -630,13 +631,17 @@ nav ul li:hover {
 .container {
     display: flex;
     background-color: #F5F0E9;
-    height: 500px;
-    margin: 20px;
-    border-radius: 10px;
+    border: 2px solid #112250;
+    border-radius: 12px;
+    max-width: 90%;
+    height: 530px;
+    margin: 20px auto;
 }
 
 .aside {
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .aside ul li {
@@ -646,14 +651,34 @@ nav ul li:hover {
 .aside a,
 .aside a:visited {
     display: inline-block;
+    box-sizing: content-box;
+    width: 300px;
+    text-align: center;
     text-decoration: none;
     color: #E0C58F;
     background-color: #112250;
     border-radius: 8px;
     padding: 8px;
     margin-top: 8px;
+    border: 2px solid transparent;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.aside a:hover {
+    color: #112250;
+    background-color: #E0C58F;
+    border: 2px solid #F3B229;
 }
 
 .main {
     text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 0;
+    justify-content: center;
+}
+
+.main h1 {
+    color: #112250;
 }
