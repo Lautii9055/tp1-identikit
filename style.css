@@ -92,7 +92,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -100,7 +99,7 @@ footer {
 
 .ul-nav a {
     text-decoration: none;
-    color: #F5F0E9;
+    color: #E0C58F;
 }
 
 .ul-nav a:visited,
@@ -622,4 +621,39 @@ nav ul li:hover {
     justify-content: center;
     gap: 20px;
     margin-top: 20px;
+}
+
+/* ==================================================
+   SECCIÓN PLAYLIST
+================================================== */
+
+.container {
+    display: flex;
+    background-color: #F5F0E9;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.aside {
+    text-align: left;
+}
+
+.aside ul li {
+    list-style-type: none;
+}
+
+.aside a,
+.aside a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #E0C58F;
+    background-color: #112250;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 8px;
+}
+
+.main {
+    text-align: center;
 }
