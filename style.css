@@ -651,18 +651,24 @@ nav ul li:hover {
 .aside a,
 .aside a:visited {
     display: inline-block;
-    box-sizing: content-box;
-    width: 300px;
-    text-align: center;
+    box-sizing: border-box;
+    width: 350px;
     text-decoration: none;
     color: #E0C58F;
     background-color: #112250;
     border-radius: 8px;
     padding: 8px;
+    margin: 0 auto;
     margin-top: 8px;
     border: 2px solid transparent;
     font-style: italic;
     font-weight: bold;
+}
+
+.aside #button-back {
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 8px;
 }
 
 .aside a:hover {
@@ -672,7 +678,6 @@ nav ul li:hover {
 }
 
 .main {
-    text-align: center;
     margin: 0 auto;
     padding: 20px;
     padding-top: 0;
@@ -681,11 +686,37 @@ nav ul li:hover {
 
 .main h1 {
     color: #112250;
+    font-size: 2.1rem;
 }
 
-.media {
-    margin-top: 20px;
+.main .media {
+    margin: 0 auto;
+}
+
+.media, video {
+    width: 600px;
+    height: 350px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     border-radius: 10px;
     overflow: hidden;
+}
+
+button {
+    box-sizing: content-box;
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #E0C58F;
+    background-color: #112250;
+    border-radius: 8px;
+    padding: 8px;
+    border: 2px solid transparent;
+    font-style: italic;
+    font-weight: bold;
+}
+
+button:hover {
+    color: #112250;
+    background-color: #E0C58F;
+    border: 2px solid #F3B229;
 }
